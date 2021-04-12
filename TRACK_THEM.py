@@ -8,13 +8,16 @@ conn = get_conn.connect()
 query = 'SELECT * FROM tracking'
 
 
-if os.path.exists("./config"):
-    raise NotADirectoryError("""\
-            Please provide your Credentials i.e Email & Passwrod before starting tracking:
-            --
-            • Run setup.py
-            --
-            Then you are good to go.""")
+if not os.path.exists("./config"):
+    raise NotADirectoryError("""
+    
+    Please provide your Credentials i.e Email & Passwrod before
+    starting tracking:
+    --
+    • Run setup.py
+    --
+    Then you are good to go.
+    """)
 
 print("[STARTED TRACKING]")
 
