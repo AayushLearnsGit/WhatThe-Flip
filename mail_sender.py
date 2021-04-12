@@ -2,19 +2,9 @@ import smtplib
 from email.message import EmailMessage
 import os, pickle
 
-def details_available():
-    if os.path.exists("./config"):
-        return True
-    return False
+
 
 def send_email(title, prod_url, old_price, new_price):
-    if not details_available():
-        return """\
-            Please provide your Credentials i.e Email & Passwrod before starting tracking:
-            --
-            • Run setup.py
-            --
-            Then you are good to go."""
     with open("config", "rb") as f:
         credentials = pickle.load(f)
 
