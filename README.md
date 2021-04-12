@@ -4,14 +4,14 @@ ____
 
 ## Walkthrough
 
-Step 1: Run `Setup.py` with your native python installation  
+**Step 1**: Run `Setup.py` with your native python installation  
 	(Do care to provide your email & password to make it work)
 
-Step 2: After a successful setup, run `TRACKING_ITEMS.py`
+**Step 2**: After a successful setup, run `TRACKING_ITEMS.py`
 	This is the file where you will be able to manage your current tracking products
 	add new ones and delete which are not related.
 
-Step 3: Simply run `TRACK_THEM.py`
+**Step 3**: Simply run `TRACK_THEM.py`
 	This is where the magic happens. This file will continuously check for the new
 	price and will shoot an email to your target mail.
 
